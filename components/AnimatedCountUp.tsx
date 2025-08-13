@@ -6,7 +6,7 @@ const AnimatedCountUp = ({ amount} : {amount: number}) => {
     <div className="animated-count-up">
         <CountUp 
             end={amount}
-            duration={2.75}
+            duration={2}
             separator=","
             prefix="Tsh "
             decimal='.'
