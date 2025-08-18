@@ -37,7 +37,7 @@ const MobileNav = ({user}: MobileNavProps) => {
       <SheetContent side="left" className="px-4  border-none bg-gradient-to-b from-blue-100 via-sky-100 to-indigo-200 dark:bg-gradient-to-b dark:from-blue-100 dark:via-sky-100 dark:to-indigo-200">
             <Link
                  href="/"
-                 className="mb-4 flex cursor-pointer mt-4 items-center gap-4"
+                 className="mb-4 flex cursor-pointer mt-4 items-center gap-2"
                  >
                 <Image
                  src="/icons/logo.png"
