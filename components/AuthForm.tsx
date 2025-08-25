@@ -20,6 +20,7 @@ import {
   FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
+import Custominput from './Custominput'
 
 
 const formSchema = z.object({
@@ -98,41 +99,21 @@ const AuthForm = ({type}:{type:string}) => {
               <>
               <Form {...form}>
                  <form onSubmit={form.handleSubmit(onSubmit)}className="space-y-8">
-                     <FormField
-                       control={form.control}
-                       name="email"
-                       render={({ field }) => (
-                         <div className='form-item'>
-                          <FormLabel className='text-14 w-full max-w-[280px] font-medium text-gray-700'>Email</FormLabel>
-                          <div className='flex flex-col w-full gap-1.5'>
-                            <FormControl>
-                              <Input placeholder="Enter your email"
-                              className='input-class'{...field}  />
-                            </FormControl>
-                            <FormMessage className='text-12 font-normal text-red-500 mt-2' />
-                          </div>
-                         </div>
-                         
-                       )}
+                 
+                       <Custominput
+                       form={form}
+                       name="Username"
+                       label="Username"
+                       placeholder="Enter your username"
                        />
-                       <FormField
-                       control={form.control}
-                       name="password"
-                       render={({ field }) => (
-                         <div className='form-item'>
-                          <FormLabel className='text-14 w-full max-w-[280px] font-medium text-gray-700'>Password</FormLabel>
-                          <div className='flex flex-col w-full gap-1.5'>
-                            <FormControl>
-                              <Input placeholder="Enter your password"
-                              className='input-class'{...field}  />
-                            </FormControl>
-                            <FormMessage className='text-12 font-normal text-red-500 mt-2' />
-                          </div>
-                         </div>
-                       )}
 
-
+                      <Custominput
+                       form={form}
+                       name="Password"
+                       label="Password"
+                       placeholder="Enter your Password"
                        />
+                       
                       <Button type="submit">Submit</Button>
                   </form>
                </Form>

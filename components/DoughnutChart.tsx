@@ -8,7 +8,7 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 
 
-const DoughnutChart = ({ accounts }: DoughnutChartProps) => {
+const DoughnutChart = () => {
 
     const data = {
         datasets:[
@@ -16,10 +16,10 @@ const DoughnutChart = ({ accounts }: DoughnutChartProps) => {
                 label:'Banks',
                 data:[12500000, 5000000, 7500000, 3000000],
                 backgroundColor: [
-                    '#ff6384',
-                    '#0747b6',
-                    '#36a2eb',
-                    '#4bc0c0',
+                    '#c938dcff',
+                    '#5448fbff',
+                    '#36ebdfff',
+                    '#4ef202ff',
                 ],
             }
         ],
