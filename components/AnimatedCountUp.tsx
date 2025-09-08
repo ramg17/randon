@@ -8,7 +8,7 @@ const AnimatedCountUp = ({ amount} : {amount: number}) => {
             end={amount}
             duration={2}
             separator=","
-            prefix="Tsh "
+            prefix="TSH "
             decimal='.'
             decimals={2}
             onEnd={() => console.log('CountUp finished!')}

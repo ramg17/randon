@@ -14,16 +14,17 @@ const DoughnutChart = () => {
         datasets:[
             {
                 label:'Banks',
-                data:[12500000, 5000000, 7500000, 3000000],
+                data:[7000000, 6500000, 7500000, 4500000, 5000000],
                 backgroundColor: [
-                    '#dc38ceff',
+                    '#f903b3ff',
                     '#5448fbff',
                     '#36ebdfff',
                     '#4ef202ff',
+                    '#f27405ff',
                 ],
             }
         ],
-        labels: ['Bank 1', 'Bank 2', 'Bank 3', 'Bank 4'],
+        labels: ['Bank 1', 'Bank 2', 'Bank 3', 'Bank 4', 'Bank 5'],
     }; 
 
   return <Doughnut 

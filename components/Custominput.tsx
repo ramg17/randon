@@ -1,14 +1,25 @@
 import React from 'react'
 import { FormField, FormLabel, FormControl, FormMessage } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
+import { Control } from 'react-hook-form'
+import { authFormSchema } from '@/lib/utils'
 
 
 
-const Custominput = ({form,name,label,placeholder}:{form:any,name:string,label:string,placeholder:string}) => {
+interface CustomInput {
+  control: Control<z.infer<typeof authFormSchema>>;
+  name: string;
+  label: string;
+  placeholder: string;
+}
+
+
+
+const Custominput = ({control, name, label,placeholder}:CustomInput) => {
   return (
     
     <FormField
-    control={form.control}
+    control={control}
     name={name}
     render={({ field }) => (
       <div className='form-item'>
