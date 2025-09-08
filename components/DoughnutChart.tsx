@@ -16,7 +16,7 @@ const DoughnutChart = () => {
                 label:'Banks',
                 data:[12500000, 5000000, 7500000, 3000000],
                 backgroundColor: [
-                    '#c938dcff',
+                    '#dc38ceff',
                     '#5448fbff',
                     '#36ebdfff',
                     '#4ef202ff',
